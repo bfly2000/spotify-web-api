@@ -1,0 +1,13 @@
+#%RAML 1.0 DataType
+type: object
+displayName: A Page Reference
+description: A reference to a paged href
+properties:
+  href:
+    type: string
+    description: |
+      A link to the Web API endpoint returning the full result of
+      the request.
+  total:
+    type: integer
+    description: The total number of items available to return.

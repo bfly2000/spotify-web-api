@@ -34,6 +34,7 @@ properties:
       Part of the response when [Track Relinking](https://developer.spotify.
       com/web-api/track-relinking-guide/) is applied. If `true`, the track is
       playable in the given market. Otherwise `false`.
+    required: false
   linked_from:
     type: TrackLink
     description: |
@@ -42,6 +43,7 @@ properties:
       response if the track linking, in fact, exists. The requested track
       has been replaced with a different track. The track in the `linked_from`
       object contains information about the originally requested track.
+    required: false
   name:
     type: string
     description: The name of the track.

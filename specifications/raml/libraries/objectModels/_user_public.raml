@@ -6,8 +6,11 @@ properties:
     type: string
     description: |
       The name displayed on the user's profile. `null` if not available.
+    required: false
   external_urls: ExternalUrl
-  followers: Followers
+  followers:
+    type: Followers
+    required: false
   href:
     type: string
     description: A link to the Web API endpoint for this user.
@@ -15,6 +18,7 @@ properties:
   images:
     type: Image[]
     description: The user's profile image.
+    required: false
   type:
     type: string
     description: 'The object type: "user".'
